@@ -4,6 +4,10 @@ This demo can grab a view, create an image from it and then pass it to the share
 
 Currently only iOS is supported and that app is locked in light mode for demo purposes.
 
+| Android |        iOS         |
+| :-----: | :----------------: |
+|   :x:   | :white_check_mark: |
+
 ### For iOS:
 
 nx run nativescript-screenshot-share:ios
