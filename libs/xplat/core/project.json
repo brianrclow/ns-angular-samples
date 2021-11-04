@@ -1,0 +1,29 @@
+{
+  "root": "libs/xplat/core",
+  "sourceRoot": "libs/xplat/core/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/xplat/core/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/xplat/core"
+      ],
+      "options": {
+        "jestConfig": "libs/xplat/core/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

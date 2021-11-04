@@ -1,0 +1,29 @@
+{
+  "root": "libs/xplat/nativescript/core",
+  "sourceRoot": "libs/xplat/nativescript/core/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/xplat/nativescript/core/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/xplat/nativescript/core"
+      ],
+      "options": {
+        "jestConfig": "libs/xplat/nativescript/core/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

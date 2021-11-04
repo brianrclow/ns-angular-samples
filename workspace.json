@@ -1,4 +1,14 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "nativescript-screenshot-share": "apps/nativescript-screenshot-share",
+    "xplat-core": "libs/xplat/core",
+    "xplat-features": "libs/xplat/features",
+    "xplat-nativescript-core": "libs/xplat/nativescript/core",
+    "xplat-nativescript-features": "libs/xplat/nativescript/features",
+    "xplat-nativescript-scss": "libs/xplat/nativescript/scss",
+    "xplat-nativescript-utils": "libs/xplat/nativescript/utils",
+    "xplat-scss": "libs/xplat/scss",
+    "xplat-utils": "libs/xplat/utils"
+  }
 }

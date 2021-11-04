@@ -1,0 +1,29 @@
+{
+  "root": "libs/xplat/nativescript/scss",
+  "sourceRoot": "libs/xplat/nativescript/scss/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/xplat/nativescript/scss/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/xplat/nativescript/scss"
+      ],
+      "options": {
+        "jestConfig": "libs/xplat/nativescript/scss/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

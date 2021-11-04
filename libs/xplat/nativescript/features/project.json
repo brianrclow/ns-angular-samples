@@ -1,0 +1,29 @@
+{
+  "root": "libs/xplat/nativescript/features",
+  "sourceRoot": "libs/xplat/nativescript/features/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/xplat/nativescript/features/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/xplat/nativescript/features"
+      ],
+      "options": {
+        "jestConfig": "libs/xplat/nativescript/features/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

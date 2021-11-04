@@ -14,7 +14,25 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ns-angular-samples/xplat/core": ["libs/xplat/core/src/index.ts"],
+      "@ns-angular-samples/xplat/environments": [
+        "libs/xplat/core/src/lib/environments/base/index.ts"
+      ],
+      "@ns-angular-samples/xplat/features": [
+        "libs/xplat/features/src/index.ts"
+      ],
+      "@ns-angular-samples/xplat/nativescript/core": [
+        "libs/xplat/nativescript/core/src/index.ts"
+      ],
+      "@ns-angular-samples/xplat/nativescript/features": [
+        "libs/xplat/nativescript/features/src/index.ts"
+      ],
+      "@ns-angular-samples/xplat/nativescript/utils": [
+        "libs/xplat/nativescript/utils/src/index.ts"
+      ],
+      "@ns-angular-samples/xplat/utils": ["libs/xplat/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

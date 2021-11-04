@@ -1,0 +1,23 @@
+<ActionBar class="action-bar">
+  <Label text="Business Card"></Label>
+</ActionBar>
+<GridLayout class="card-container" columns="*" rows="*,auto,auto">
+  <!-- card -->
+  <GridLayout id="card" class="card" row="0" columns="*,auto" rows="*">
+    <StackLayout verticalAlignment="center" col="0">
+      <Label class="company-name" text="Fictitious Tree Company" textWrap="true" horizontalAlignment="left"></Label>
+      <Label class="contact-info" text="Jim Brown" textWrap="true" horizontalAlignment="left"></Label>
+      <Label class="contact-info" text="208-456-7890" textWrap="true" horizontalAlignment="left"></Label>
+      <Label class="contact-info" text="908 Main St. Boise, ID" textWrap="true" horizontalAlignment="left"></Label>
+    </StackLayout>
+
+    <AbsoluteLayout col="1">
+      <Label class="square" text="" textWrap="true" left="20" top="30" width="160" height="160"></Label>
+      <Image src="~/assets/tree.png" left="10" top="20" width="180" height="180"></Image>
+    </AbsoluteLayout>
+  </GridLayout>
+
+  <!-- buttons -->
+  <Button class="btn" text="Share" (tap)="shareCard($event)" row="1"></Button>
+  <!-- <Button class="btn" text="Save" (tap)="saveCard($event)" row="2"></Button> -->
+</GridLayout>
