@@ -8,6 +8,13 @@ Currently only iOS is supported and that app is locked in light mode for demo pu
 | :-----: | :----------------: |
 |   :x:   | :white_check_mark: |
 
+TODO:
+* Add icon
+* Add launch screen
+* Add save button (save to photo library)
+* Add dialog popup confirming save
+* Add font awesome icons
+
 ### For iOS:
 
 nx run nativescript-screenshot-share:ios

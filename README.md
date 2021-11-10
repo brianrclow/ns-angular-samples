@@ -1,8 +1,15 @@
 # ns-angular-samples
 
-This monorepo serves as a place for NativeScript Angular Sample apps that do various things. The goal would be to have a repo that demonstrates various features of NativeScript using the Angular flavor.
+This monorepo serves as a learning resource for NativeScript Angular concepts and ideas. The sample apps are listed below for reference. The goal would be to have a repo that demonstrates various features of NativeScript using the Angular flavor.
 
 [screenshot-share](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-screenshot-share) - convert view to image and share image
+
+
+### Each App should have:
+* Clear purpose
+* Documented Readme with screenshots and resource links
+* Basic app icon and launch screen
+* Cleaned up and documented code
 
 TODO:
 
