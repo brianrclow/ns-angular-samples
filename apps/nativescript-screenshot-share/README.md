@@ -17,11 +17,11 @@ TODO:
 
 ### For iOS:
 
-nx run nativescript-screenshot-share:ios
+`nx run nativescript-screenshot-share:ios`
 
 ### To clean project:
 
-nx run nativescript-screenshot-share:clean
+`nx run nativescript-screenshot-share:clean`
 
 ### Demo Image:
 

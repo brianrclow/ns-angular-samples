@@ -3,7 +3,7 @@
 This monorepo serves as a learning resource for NativeScript Angular concepts and ideas. The sample apps are listed below for reference. The goal would be to have a repo that demonstrates various features of NativeScript using the Angular flavor.
 
 [screenshot-share](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-screenshot-share) - convert view to image and share image
-
+[image-cache](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-image-cache) - cache images downloaded to device
 
 ### Each App should have:
 * Clear purpose
