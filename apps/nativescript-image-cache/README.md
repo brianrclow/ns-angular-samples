@@ -8,14 +8,12 @@ Currently only iOS is supported and that app is locked in light mode for demo pu
 | :-----: | :----------------: |
 |   :x:   | :white_check_mark: |
 
-TODO:
-* Add icon
-* Add launch screen
+## Resources:
 
-### Resources:
+Image Cache It Plugin:
 
-https://github.com/triniwiz/nativescript-image-cache-it
-
+- [API Reference](https://triniwiz.github.io/nativescript-plugins/api-reference/image-cache-it.html)
+- [Github](https://github.com/triniwiz/nativescript-image-cache-it)
 
 ### For iOS:
 

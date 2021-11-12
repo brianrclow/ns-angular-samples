@@ -1,6 +1,6 @@
 # Screenshot Share Demo
 
-This demo can grab the view of the business card, create an image from it and then pass it to the share sheet to be shared outside of the app.
+This demo can grab the view of the business card, create an image from it and then pass it to the share sheet to be shared outside of the app. This was created in part by adapting implementations from this youtube video: [Take a SCREENSHOT in NativeScript | Tutorial](https://youtu.be/8iLR4swFhzw)
 
 Currently only iOS is supported and that app is locked in light mode for demo purposes.
 
@@ -8,12 +8,16 @@ Currently only iOS is supported and that app is locked in light mode for demo pu
 | :-----: | :----------------: |
 |   :x:   | :white_check_mark: |
 
-TODO:
-* Add icon
-* Add launch screen
-* Add save button (save to photo library)
-* Add dialog popup confirming save
-* Add font awesome icons
+## Resources:
+
+Youtube Video
+
+- [Take a SCREENSHOT in NativeScript | Tutorial](https://youtu.be/8iLR4swFhzw)
+
+Social Share Plugin:
+
+- [Docs](https://docs.nativescript.org/plugins/social-share.html)
+- [Github](https://github.com/NativeScript/plugins/tree/main/packages/social-share)
 
 ### For iOS:
 
