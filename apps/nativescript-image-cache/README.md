@@ -15,6 +15,9 @@ Image Cache It Plugin:
 - [API Reference](https://triniwiz.github.io/nativescript-plugins/api-reference/image-cache-it.html)
 - [Github](https://github.com/triniwiz/nativescript-image-cache-it)
 
+## Usage
+
+Run commands should be entered from root of project, not at app level.
 ### For iOS:
 
 `nx run nativescript-image-cache:ios`

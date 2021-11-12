@@ -19,6 +19,10 @@ Social Share Plugin:
 - [Docs](https://docs.nativescript.org/plugins/social-share.html)
 - [Github](https://github.com/NativeScript/plugins/tree/main/packages/social-share)
 
+## Usage
+
+Run commands should be entered from root of project, not at app level.
+
 ### For iOS:
 
 `nx run nativescript-screenshot-share:ios`

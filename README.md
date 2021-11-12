@@ -11,6 +11,14 @@ This monorepo serves as a learning resource for NativeScript Angular concepts an
 
 #
 
+## Usage
+
+This mono repo can run all apps from root: `nx run <application-name>:<platform>`
+
+See app specific README files for exact commands.
+
+#
+
 ### Project Info/Maintenance:
 
 Generate a new app in monorepo: `nx generate app`
