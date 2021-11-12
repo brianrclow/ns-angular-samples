@@ -1,0 +1,8 @@
+<ActionBar title="Image Detail" class="action-bar"></ActionBar>
+<GridLayout rows="auto,*">
+  <StackLayout row="0" orientation="vertical" verticalAlignment="middle">
+    <Label [text]="item.url" textWrap="true" horizontalAlignment="center"></Label>
+  </StackLayout>
+
+  <ImageCacheIt row="1" [src]="item.url"></ImageCacheIt>
+</GridLayout>

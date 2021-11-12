@@ -1,0 +1,23 @@
+<ActionBar title="Image Cache" class="action-bar"> </ActionBar>
+
+<GridLayout class="page" height="100%">
+  <ListView [items]="items | async" class="list-group">
+    <ng-template let-item="item">
+      <GridLayout class="list-group-item" columns="auto,*" [nsRouterLink]="['/item', item.url]" [text]="item.url">
+        <ns-angular-samples-image
+          styling="image"
+          placeHolder="res://hourglass"
+          errorHolder="res://broken"
+          fallback="res://fallback"
+          [stretch]="stretch"
+          width="100"
+          height="100"
+          [src]="item.url"
+        ></ns-angular-samples-image>
+        <StackLayout col="1" orientation="vertical" verticalAlignment="middle">
+          <Label [text]="item.url" textWrap="true"></Label>
+        </StackLayout>
+      </GridLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>

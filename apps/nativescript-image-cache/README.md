@@ -1,6 +1,6 @@
 # Image Cache Demo
 
-This demo can cache an image using the NativeScript Image Cache API.
+This demo can cache an image using the NativeScript Image-Cache-It Plugin.
 
 | Android |        iOS         |
 | :-----: | :----------------: |
@@ -12,8 +12,7 @@ TODO:
 
 ### Resources:
 
-https://docs.nativescript.org/api-reference/classes/imagecache.html
-https://v7.docs.nativescript.org/ui/components/image-cache
+https://github.com/triniwiz/nativescript-image-cache-it
 
 
 ### For iOS:
