@@ -1,6 +1,6 @@
 # Screenshot Share Demo
 
-This demo can grab a view, create an image from it and then pass it to the share sheet to be shared outside of the app.
+This demo can grab the view of the business card, create an image from it and then pass it to the share sheet to be shared outside of the app.
 
 Currently only iOS is supported and that app is locked in light mode for demo purposes.
 
