@@ -4,7 +4,7 @@ This monorepo serves as a learning resource for NativeScript Angular concepts an
 
 #
 
-### Apps
+## Apps
 
 - [screenshot-share](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-screenshot-share) - convert a view to an image and share it
 - [image-cache](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-image-cache) - cache images downloaded to device
@@ -19,7 +19,20 @@ See app specific README files for exact commands.
 
 #
 
-### Project Info/Maintenance:
+## Resources
+
+- [Official Plugins Docs](https://docs.nativescript.org/plugins/index.html)
+- [Official Plugins Github](https://github.com/NativeScript)
+- [Community Plugins Docs](https://nativescript-community.github.io)
+- [Community Plugins Github](https://github.com/nativescript-community/)
+- [nStudio Plugins Github](https://github.com/nstudio/nativescript-plugins)
+- [Triniwiz Plugins Docs](https://triniwiz.github.io/nativescript-plugins/api-reference/)
+- [Triniwiz Plugins Github](https://github.com/triniwiz/nativescript-plugins)
+- [Youtube Videos using #iscriptnative](https://www.youtube.com/hashtag/iscriptnative)
+
+#
+
+## Project Info/Maintenance:
 
 Generate a new app in monorepo: `nx generate app`
 
