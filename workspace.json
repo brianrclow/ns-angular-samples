@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "nativescript-image-cache": "apps/nativescript-image-cache",
+    "nativescript-labels": "apps/nativescript-labels",
     "nativescript-screenshot-share": "apps/nativescript-screenshot-share",
     "xplat-core": "libs/xplat/core",
     "xplat-features": "libs/xplat/features",

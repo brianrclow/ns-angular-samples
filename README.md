@@ -8,6 +8,7 @@ This monorepo serves as a learning resource for NativeScript Angular concepts an
 
 - [screenshot-share](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-screenshot-share) - convert a view to an image and share it
 - [image-cache](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-image-cache) - cache images downloaded to device
+- [labels](https://github.com/brianrclow/ns-angular-samples/tree/main/apps/nativescript-labels) - demonstrates various features of labels
 
 #
 
