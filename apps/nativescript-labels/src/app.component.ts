@@ -12,6 +12,8 @@ import { AppBaseComponent } from '@ns-angular-samples/xplat/nativescript/feature
   `,
 })
 export class AppComponent extends AppBaseComponent implements OnInit {
+
+
   constructor(appService: AppService) {
     super(appService);
   }
@@ -19,8 +21,16 @@ export class AppComponent extends AppBaseComponent implements OnInit {
   ngOnInit(): void {
     Application.on(Application.fontScaleChangedEvent, (args) => {
       console.log('fontScaleChangedEvent newValue', args.newValue);
-      // Application.addCss(.ns-ios { --font -scale: ${normalizedValue } });
+      Application.addCss(`.ns-ios { --font-scale: ${args.newValue} }`); // note the backtick for template strings
     });
-  }
 
+
+    // using a normalized value for setting boundaries to the font sizes
+    // Application.on(Application.fontScaleChangedEvent, args => {
+    //   console.log('fontScaleChangedEvent newValue', args.newValue);
+    //   const normalizedValue = Math.max(0.5, Math.min(args.newValue, 2)); // limit scale factor to avoid too small or too large fonts
+    //   Application.addCss('.ns-ios {--font-scale: ' + normalizedValue + '}');
+    // });
+
+  }
 }
