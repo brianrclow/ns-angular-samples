@@ -1,23 +1,34 @@
-<StackLayout verticalAlignment="center" style="margin: 5%">
-  <!-- <Label class="classX classY fs-10" text="This text will scale with font size 10 as default"></Label>
-  <Label text=" " textWrap="true"></Label> -->
+<StackLayout verticalAlignment="center" class="label-container">
+  <Label text="Basic Label." class="label"></Label>
 
-  <!-- <Label text="Test Text Should Grow" textWrap="true" adjustFontForContentSizeCategory="true" accessible="true"></Label>
-  <Label text=" " textWrap="true"></Label> -->
+  <Label
+    text="Label with textWrap set to true so the text will just continue to wrap the screen with more lines of text."
+    textWrap="true"
+    class="label"
+  ></Label>
+  <Label text="Label with textWrap set to false so the text will cut off at the edge of the screen." class="label"></Label>
 
-  <Label textWrap="true">
+  <Label text="letterSpacing" letterSpacing="1" textWrap="true" class="label"></Label>
+
+  <Label text="underline" textDecoration="underline" textWrap="true" class="label"></Label>
+  <Label text="line-through" textDecoration="line-through" textWrap="true" class="label"></Label>
+
+  <Label textWrap="true" class="label">
     <FormattedString>
-      <Span text="The label below is constrained to wrap up to "></Span>
-      <Span [text]="lines" style="color: white; background-color: rgb(5, 92, 121)"></Span>
-      <Span text=" lines."></Span>
+      <Span text="Label using a formatted string to add the number "></Span>
+      <Span [text]="lines" style="color: white; background-color: rgb(48, 62, 67)"></Span>
+      <Span text=" in with different formatting."></Span>
     </FormattedString>
   </Label>
 
-  <Label text=" " textWrap="true"></Label>
+  <Label class="label fs-10" text="This text will scale with font size 10 as default"></Label>
+
+  <Label (loaded)="dynamicLabelLoaded()" text="Dynamic Label" textWrap="true"></Label>
+
   <Label
     (loaded)="labelLoaded()"
     #notesLabel
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    style="background-color: lightblue"
+    text="This text is split to only wrap to 2 lines. It will wrap the text just like above but it will only wrap for 2 lines before cutting off and adding the 3 dots"
+    class="label"
   ></Label>
 </StackLayout>

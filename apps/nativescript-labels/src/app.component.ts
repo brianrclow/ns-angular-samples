@@ -19,8 +19,7 @@ export class AppComponent extends AppBaseComponent implements OnInit {
   ngOnInit(): void {
     Application.on(Application.fontScaleChangedEvent, (args) => {
       console.log('fontScaleChangedEvent newValue', args.newValue);
-      Application.addCss('.ns - ios { --font - scale: ${ normalizedValue } }');
-
+      // Application.addCss(.ns-ios { --font -scale: ${normalizedValue } });
     });
   }
 
