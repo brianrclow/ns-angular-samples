@@ -7,6 +7,7 @@ import { BaseComponent } from '@ns-angular-samples/xplat/core';
   moduleId: module.id,
   selector: 'ns-angular-samples-home',
   templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent extends BaseComponent {
   lines: number;
@@ -17,6 +18,7 @@ export class HomeComponent extends BaseComponent {
     this.lines = 3;
   }
 
+  // TODO: Set Android text max lines
   labelLoaded() {
     this.notesLabel.nativeElement.ios.numberOfLines = this.lines;
     // this.notesLabel.nativeElement,android.text. setMaxLines(2);

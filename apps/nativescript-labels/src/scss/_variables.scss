@@ -1,1 +1,4 @@
 // app specific: override or add new variables...
+.fs-10 {
+  font-size: calc(10 * var(--font-scale, 1));
+}
