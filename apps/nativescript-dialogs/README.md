@@ -2,7 +2,6 @@
 
 This demonstrates the different dialog options that come out of the box with NativeScript. These dialogs can be very useful for all sorts of interaction in app. They can be customized and used in different ways.
 
-
 | Android |        iOS         |
 | :-----: | :----------------: |
 |   :x:   | :white_check_mark: |
@@ -26,3 +25,4 @@ Run commands should be entered from root of project, not at app level.
 
 ### Demo Image:
 
+<img width="300" height="650" src="demo.png"></img>
