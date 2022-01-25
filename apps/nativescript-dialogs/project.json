@@ -1,0 +1,80 @@
+{
+  "projectType": "application",
+  "root": "apps/nativescript-dialogs/",
+  "sourceRoot": "apps/nativescript-dialogs/src",
+  "prefix": "ns-angular-samples",
+  "targets": {
+    "build": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "noHmr": true,
+        "production": true,
+        "uglify": true,
+        "release": true,
+        "forDevice": true
+      },
+      "configurations": {
+        "prod": {
+          "fileReplacements": [
+            {
+              "replace": "../../libs/xplat/core/src/lib/environments/environment.ts",
+              "with": "./src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "ios": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "platform": "ios"
+      },
+      "configurations": {
+        "build": {
+          "copyTo": "./dist/build.ipa"
+        },
+        "prod": {
+          "combineWithConfig": "build:prod"
+        }
+      }
+    },
+    "android": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "platform": "android"
+      },
+      "configurations": {
+        "build": {
+          "copyTo": "./dist/build.apk"
+        },
+        "prod": {
+          "combineWithConfig": "build:prod"
+        }
+      }
+    },
+    "clean": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "clean": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/nativescript-dialogs/**/*.ts",
+          "apps/nativescript-dialogs/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "apps/nativescript-dialogs/jest.config.js",
+        "tsConfig": "apps/nativescript-dialogs/tsconfig.spec.json",
+        "passWithNoTests": true,
+        "setupFile": "apps/nativescript-dialogs/src/test-setup.ts"
+      }
+    }
+  }
+}
