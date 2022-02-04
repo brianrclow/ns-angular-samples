@@ -1,4 +1,7 @@
 <ActionBar title="Alert Dialog"></ActionBar>
 <StackLayout verticalAlignment="center">
-    <Button text="open Alert" (tap)="showAlert()" horizontalAlignment="center"></Button>
+  <Button text="NativeScript AlertDialog" (tap)="showDefaultAlertDialog()" horizontalAlignment="center"></Button>
+  <Button text="iOS Alert Dialog" (tap)="showIOSAlertDialog()" horizontalAlignment="center"></Button>
+
+  <Button text="iOS Action Dialog" (tap)="showIOSActionSheetDialog()" horizontalAlignment="center"></Button>
 </StackLayout>

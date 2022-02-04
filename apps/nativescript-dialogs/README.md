@@ -6,10 +6,15 @@ This demonstrates the different dialog options that come out of the box with Nat
 | :-----: | :----------------: |
 |   :x:   | :white_check_mark: |
 
+
+[Changing the ActionStyle for iOS](https://github.com/NativeScript/NativeScript/blob/17c85107ba84953630b0471c1f6f3d68f6d59f76/packages/core/ui/dialogs/index.ios.ts#L294)
 ## Resources:
 
 - [Docs](https://docs.nativescript.org/interaction.html#dialogs)
 - [Github](https://github.com/NativeScript/NativeScript/tree/master/packages/core/ui/dialogs)
+
+- iOS uses [UIAlertController](https://developer.apple.com/documentation/uikit/uialertcontroller)
+- Android uses [AlertDialog.Builder](https://developer.android.com/reference/android/app/AlertDialog.Builder)
 
 ## Usage
 
