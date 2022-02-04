@@ -10,35 +10,26 @@ import { BaseComponent } from '@ns-angular-samples/xplat/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent extends BaseComponent {
-  lines: number;
+  maxLineWrap: number;
   @ViewChild("notesLabel", { static: true }) notesLabel: ElementRef<Label>;
-  // @ViewChild("dynamicLabel", { static: true }) dynamicLabel: ElementRef<Label>;
 
   constructor() {
     super();
-    this.lines = 2;
+    this.maxLineWrap = 2;
   }
 
-  dynamicLabelLoaded() {
-
-    // this.dynamicLabel.nativeElement.ios.font = this.dynamicLabel.nativeElement.ios.preferredFont('body');
-    // this.dynamicLabel.nativeElement.ios.adjustsFontForContentSizeCategory = true;
-
-    // From documentation:
-    // label.ios.font = .preferredFont(forTextStyle: .body)
-    // label.adjustsFontForContentSizeCategory = true
-  }
-
-  // TODO: Set Android text max lines
-  labelLoaded() {
+  /**
+   * Sets the maximum number of lines the text will wrap for the Label
+   */
+  setMaxLineWrap() {
     if (isIOS) {
-      this.notesLabel.nativeElement.ios.numberOfLines = this.lines;
-
-      // Documentation on lineBreakMode https://developer.apple.com/documentation/uikit/nslinebreakmode
-      // this.notesLabel.nativeElement.ios.lineBreakMode = 1;
+      this.notesLabel.nativeElement.ios.numberOfLines = this.maxLineWrap;
+      this.notesLabel.nativeElement.ios.adjustsFontSizeToFitWidth = false;
+      this.notesLabel.nativeElement.ios.lineBreakMode = NSLineBreakMode.ByTruncatingTail;
     } else {
-      // this.notesLabel.nativeElement.android.text. setMaxLines(2);
+      this.notesLabel.nativeElement.android.setSingleLine(false);
+      this.notesLabel.nativeElement.android.setMaxLines(this.maxLineWrap);
+      this.notesLabel.nativeElement.android.setEllipsize(android.text.TextUtils.TruncateAt.END);
     }
-
   }
 }

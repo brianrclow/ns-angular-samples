@@ -16,17 +16,15 @@
   <Label textWrap="true" class="label">
     <FormattedString>
       <Span text="Label using a formatted string to add the number "></Span>
-      <Span [text]="lines" style="color: white; background-color: rgb(48, 62, 67)"></Span>
+      <Span [text]="maxLineWrap" style="color: white; background-color: rgb(48, 62, 67)"></Span>
       <Span text=" in with different formatting."></Span>
     </FormattedString>
   </Label>
 
-  <Label class="label fs-10" text="This text will scale with font size 10 as default"></Label>
-
-  <Label (loaded)="dynamicLabelLoaded()" text="Dynamic Label" textWrap="true"></Label>
+  <!-- <Label class="label fs-10" text="This text will scale with font size 10 as default"></Label> -->
 
   <Label
-    (loaded)="labelLoaded()"
+    (loaded)="setMaxLineWrap()"
     #notesLabel
     text="This text is split to only wrap to 2 lines. It will wrap the text just like above but it will only wrap for 2 lines before cutting off and adding the 3 dots"
     class="label"

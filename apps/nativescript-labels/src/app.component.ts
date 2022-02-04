@@ -7,7 +7,7 @@ import { AppBaseComponent } from '@ns-angular-samples/xplat/nativescript/feature
   selector: 'ns-angular-samples-root',
   template: `
     <GridLayout>
-      <page-router-outlet></page-router-outlet>
+      <router-outlet></router-outlet>
     </GridLayout>
   `,
 })

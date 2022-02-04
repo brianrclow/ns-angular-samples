@@ -1,12 +1,10 @@
 # Labels Demo
 
-This demo shows some of what is capable using the nativescript labels.
-
-Currently only iOS is supported and that app is locked in light mode for demo purposes.
+This demo shows some of what is capable using the nativescript labels. One of the more exciting things is accessing native apis. The last label in this shows how to access native iOS and Android apis to limit the number of lines the Label will wrap to.
 
 | Android |        iOS         |
 | :-----: | :----------------: |
-|   :x:   | :white_check_mark: |
+| :white_check_mark: | :white_check_mark: |
 
 ## Resources:
 
@@ -23,8 +21,16 @@ Run commands should be entered from root of project, not at app level.
 
 `nx run nativescript-labels:ios`
 
+### For Android:
+
+`nx run nativescript-labels:android`
+
 ### To clean project:
 
 `nx run nativescript-labels:clean`
 
-### Demo Image:
+### Demo Images:
+
+| iOS | Android|
+| --- | ---|
+|![iOS](ios-labels.png) | ![Android](android-labels.png)|
