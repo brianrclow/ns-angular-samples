@@ -1,0 +1,17 @@
+{
+  "name": "bottomsheet",
+  "main": "./src/main.ts",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "node ./tools/xplat-postinstall.js"
+  },
+  "dependencies": {
+    "@nativescript/core": "*",
+    "@nativescript-community/ui-persistent-bottomsheet": "*"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.1.1",
+    "@nativescript/ios": "~8.1.0"
+  }
+}

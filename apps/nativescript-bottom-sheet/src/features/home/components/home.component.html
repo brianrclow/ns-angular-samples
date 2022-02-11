@@ -1,0 +1,31 @@
+<ActionBar>
+  <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+  <Label text="Basic Drawer"></Label>
+</ActionBar>
+
+<BottomSheet [stepIndex]="stepIndex"
+(stepIndexChange)="onIndexChanged($event)" [steps]="[56, 156, 456]" backdropColor="#88000000">
+  <StackLayout backgroundColor="red">
+      <Label text="This is the main content"></Label>
+  </StackLayout>
+  <GridLayout bottomSheet backgroundColor="yellow" rows="56, 100, 300">
+      <StackLayout row="0" orientation="horizontal">
+          <Button text="Open Step 0" class="Button" (tap)="setIndex(0)"></Button>
+          <Button text="Open Step 1" class="Button" (tap)="setIndex(1)"></Button>
+          <Button text="Open Step 2" class="Button" (tap)="setIndex(2)"></Button>
+      </StackLayout>
+      <StackLayout row="1" backgroundColor="orange">
+          <Label text="Second step section"></Label>
+      </StackLayout>
+      <ListView [items]="items" row="2" colWidth="50%" rowHeight="100">
+          <ng-template let-item="item" let-i="index">
+              <GridLayout rows="*, auto" class="item" [backgroundColor]="item.color">
+                  <StackLayout row="1">
+                      <Label row="1" [text]="item.name" class="title"></Label>
+                      <Label row="1" [text]="item.color" class="subtitle"></Label>
+                  </StackLayout>
+              </GridLayout>
+          </ng-template>
+      </ListView>
+  </GridLayout>
+</BottomSheet>

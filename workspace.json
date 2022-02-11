@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "nativescript-bottom-sheet": "apps/nativescript-bottom-sheet",
     "nativescript-dialogs": "apps/nativescript-dialogs",
     "nativescript-image-cache": "apps/nativescript-image-cache",
     "nativescript-labels": "apps/nativescript-labels",
