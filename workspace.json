@@ -5,6 +5,7 @@
     "nativescript-image-cache": "apps/nativescript-image-cache",
     "nativescript-labels": "apps/nativescript-labels",
     "nativescript-screenshot-share": "apps/nativescript-screenshot-share",
+    "nativescript-svg": "apps/nativescript-svg",
     "xplat-core": "libs/xplat/core",
     "xplat-features": "libs/xplat/features",
     "xplat-nativescript-core": "libs/xplat/nativescript/core",
