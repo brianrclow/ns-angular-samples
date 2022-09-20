@@ -1,0 +1,19 @@
+{
+	"name": "dialogs",
+	"id": "org.nativescript.dialogs",
+	"appResourcesPath": "App_Resources",
+	"android": {
+		"v8Flags": "--expose_gc",
+		"markingMode": "none",
+		"codeCache": true,
+		"suppressCallJSMethodExceptions": false
+	},
+	"ios": {
+		"discardUncaughtJsExceptions": false
+	},
+	"appPath": "src",
+	"cli": {
+		"packageManager": "npm"
+	},
+	"main": "bundle"
+}
